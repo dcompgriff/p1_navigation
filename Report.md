@@ -45,7 +45,7 @@ The main differences of my implementation from the paper's algorithm is that it 
 
 It took **560 episodes** to solve the environment. 
 
-The above image is a plot of the rewards for this agent. I let the agent continue learning well past officially solving the environment by setting the solution threshold to '15.3' (Which is why the image says the environment was solved in 802 episodes. 15.3 was reached in 802 episodes). The above plot shows that for the first 400 episodes the agent steadily learns. At around 400 episodes we begin seeing the average performance start to taper off in its rate of growth.
+The above image is a plot of the rewards for this agent for solving the problem. In the below plot of rewards, I let the agent continue learning well past officially solving the environment by setting the solution threshold to '15.3' (Which is why the below image says the environment was solved in 802 episodes. 15.3 was reached in 802 episodes). The below plot shows that for the first 400 episodes the agent steadily learns. At around 400 episodes we begin seeing the average performance start to taper off in its rate of growth.
 
 ![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/training_results.png)
 
