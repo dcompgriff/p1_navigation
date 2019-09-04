@@ -16,7 +16,7 @@ I opted to use the off-policy reinforcement learning method known as Q-Learning.
 
 The learning algorithm used was based off of the algorithm presented in the deep q network paper, which can be found [here](https://www.nature.com/articles/nature14236). The main algorithm follows the outline provided in the image provided below. The algorithm starts by initializing a 'replay memory' which is a fixed size memory buffer that holds previous experience tuples. The algorithm then initializes two neural networks. These are a 'target' network, and a 'current' network. The target network is used to generate the estimated value of the next state + action pair given the previous state and action. The target network allows learning while preventing target drift and unbounded oscillation during learning. The current network is used to perform updates. The network parameters are updated in a very similar method to computer memory circuits (See how D-Latches are used to prevent instability in D-Flip Flops [here](https://en.wikibooks.org/wiki/Electronics/Latches_and_Flip_Flops)). To prevent unbounded oscillation and instability, one network holds the current parameters while the other is then updated. When ready for the final update, the values from the current network are 'latched' into the target network's parameters. 
 
-![DQN Learning Algorithm][https://github.com/dcompgriff/p1_navigation/blob/master/report_images/deep_q_network_algorithm.png]
+![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/deep_q_network_algorithm.png)
 
 ### The steps of DQN
 
@@ -41,13 +41,13 @@ The main differences of my implementation from the paper's algorithm is that it 
 
 ## Analysis of Results
 
-![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/training_results.png)
+![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/training_results_13.png)
 
 It took **560 episodes** to solve the environment. 
 
 The above image is a plot of the rewards for this agent. I let the agent continue learning well past officially solving the environment by setting the solution threshold to '15.3' (Which is why the image says the environment was solved in 802 episodes. 15.3 was reached in 802 episodes). The above plot shows that for the first 400 episodes the agent steadily learns. At around 400 episodes we begin seeing the average performance start to taper off in its rate of growth.
 
-![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/training_results_13.png)
+![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/training_results.png)
 
 I then ran the algorithm for 100 episodes to calculate a final validation of the agent where no learning was performed (aka eps=0). The final validation score is given in the image below as an average score of 14.72 for 100 episodes (0-99). 
 
