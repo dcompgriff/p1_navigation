@@ -4,6 +4,8 @@
 
 # Project 1: Navigation
 
+Author: Daniel Griffin using the Udacity "p1_navigation" project baseline of the deep reinforcement learning nano-degree. (I've added special notes to this project in the below sections of this readme)
+
 ### Introduction
 
 For this project, I trained an agent to navigate (and collect bananas!) in a large, square world.  
