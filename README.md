@@ -6,6 +6,10 @@
 
 Author: Daniel Griffin using the Udacity "p1_navigation" project baseline of the deep reinforcement learning nano-degree. (I've added special notes to this project in the below sections of this readme)
 
+### Final Report
+
+The final report can be seen in the 'Report.md' file which nicely renders on github. For an html version, see "Report.html"
+
 ### Introduction
 
 For this project, I trained an agent to navigate (and collect bananas!) in a large, square world.  
