@@ -30,10 +30,18 @@ The general network parameters is given below. The activation function used for 
 
 ![DQN Learning Algorithm](https://github.com/dcompgriff/p1_navigation/blob/master/report_images/network.png)
 
-Other Parameters:
+Other Model Parameters:
 * Loss: MSE-Loss over a multi-task objective function
 * Optimizer: Adam optimizer with default parameters and learning rate of .0005
 * Network: Input vector with 37 elements into a FC linear network with bias and 512 nodes and a leaky Relu activation, 1 FC linear network with 128 nodes and a leaky Relu activation, and a final linear FC network with 4 actions.
+
+Other Agent Parameters:
+* Replay Buffer Size: 100000 
+* Mini Batch Size: 64
+* Gamma (discount factor):  0.99           
+* Tau (Soft update factor): 0.001 
+* Learning Rate: .0005
+* C (update every): 4 steps
 
 ### Differences from the paper
 
